@@ -37,7 +37,7 @@ export default function ProjectShowcase() {
       capacity: '25kW', 
       title: 'Luxury Estate System', 
       location: 'Chandigarh', 
-      img: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&q=80&w=2070' 
+      img: 'https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?auto=format&fit=crop&q=80&w=2070' 
     },
   ];
 

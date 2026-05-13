@@ -8,28 +8,28 @@ export default function Hero() {
     <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
+        <Image 
+          src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=2000" 
+          alt="Solar Farm" 
+          fill
+          className="object-cover"
+          priority
+          referrerPolicy="no-referrer"
+        />
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover z-10 opacity-80"
         >
           <source 
             src="https://player.vimeo.com/external/494252666.sd.mp4?s=72fa1fe0640d27038e9067b5791c136894086055&profile_id=164&oauth2_token_id=57447761" 
             type="video/mp4" 
           />
-          {/* Fallback image if video fails to load */}
-          <Image 
-            src="https://images.unsplash.com/photo-1509391366360-120014a51e60?q=80&w=2070&auto=format&fit=crop" 
-            alt="Solar Farm" 
-            fill
-            className="object-cover"
-            referrerPolicy="no-referrer"
-          />
         </video>
-        {/* Dark Overlay (55-65% opacity) */}
-        <div className="absolute inset-0 bg-zippy-dark/65 z-10" />
+        {/* Dark Overlay (Reduced opacity for better visibility) */}
+        <div className="absolute inset-0 bg-black/40 z-20" />
       </div>
 
       {/* Content Container */}
