@@ -99,7 +99,7 @@ export default function FinalCTA() {
 
               {/* Contact No */}
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-white/15 border border-white/20 backdrop-blur-md flex items-center justify-center shrink-0">
                   <Phone className="w-5 h-5 text-zippy-gold" />
                 </div>
 
@@ -119,7 +119,7 @@ export default function FinalCTA() {
 
               {/* Email */}
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-white/15 border border-white/20 backdrop-blur-md flex items-center justify-center shrink-0">
                   <Mail className="w-5 h-5 text-zippy-gold" />
                 </div>
 
@@ -139,7 +139,7 @@ export default function FinalCTA() {
 
               {/* Address */}
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-white/15 border border-white/20 backdrop-blur-md flex items-center justify-center shrink-0">
                   <MapPin className="w-5 h-5 text-zippy-gold" />
                 </div>
 
@@ -148,7 +148,7 @@ export default function FinalCTA() {
                     Address
                   </span>
 
-                  <p className="text-gray-300 leading-relaxed max-w-md">
+                  <p className="text-white font-semibold leading-relaxed max-w-md">
                     No. 415, 4th Floor, Golden Trade Centre,
                     Sector 2, Raipur, CG 492001
                   </p>
