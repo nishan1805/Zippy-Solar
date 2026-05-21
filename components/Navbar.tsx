@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Sun, Instagram } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X, Instagram } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Navbar() {
@@ -13,14 +13,16 @@ export default function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
+
     window.addEventListener('scroll', handleScroll);
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const links = [
     { name: 'Home', href: '#home' },
     { name: 'Services', href: '#services' },
-   // { name: 'Projects', href: '#projects' },
+    // { name: 'Projects', href: '#projects' },
     { name: 'Savings', href: '#savings' },
     { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#contact' },
@@ -29,18 +31,35 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'nav-glass py-0 h-20' : 'bg-transparent py-6 h-20'
+        scrolled
+          ? 'nav-glass py-0 h-20'
+          : 'bg-transparent py-6 h-20'
       } flex items-center`}
     >
       <div className="w-full px-6 md:px-12 flex items-center justify-between">
-        <Link href="#home" className="flex items-center gap-2 group">
+
+        {/* Logo */}
+        <Link
+          href="#home"
+          className="flex items-center gap-2 group"
+        >
           <div className="w-8 h-8 rounded bg-zippy-gold flex items-center justify-center">
-            <div className="w-4 h-4 bg-zippy-dark" style={{clipPath: 'polygon(40% 0%, 40% 45%, 100% 45%, 60% 100%, 60% 55%, 0% 55%)'}}></div>
+            <div
+              className="w-4 h-4 bg-zippy-dark"
+              style={{
+                clipPath:
+                  'polygon(40% 0%, 40% 45%, 100% 45%, 60% 100%, 60% 55%, 0% 55%)'
+              }}
+            />
           </div>
-          <span className="text-xl font-bold tracking-tight text-white">ZIPPY<span className="text-zippy-gold">SOLAR</span></span>
+
+          <span className="text-xl font-bold tracking-tight text-white">
+            ZIPPY
+            <span className="text-zippy-gold">SOLAR</span>
+          </span>
         </Link>
 
-        {/* Desktop Nav */}
+        {/* Desktop Navigation */}
         <nav className="hidden lg:flex gap-8 text-sm font-medium text-white/60">
           {links.map((link) => (
             <Link
@@ -55,18 +74,26 @@ export default function Navbar() {
 
         {/* Desktop Actions */}
         <div className="hidden lg:flex items-center gap-4">
-          <a 
-            href="https://www.instagram.com/zippy.solar/" 
-            target="_blank" 
+
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/zippy.solar/"
+            target="_blank"
             rel="noopener noreferrer"
             className="w-11 h-11 rounded-full border border-white/12 flex items-center justify-center text-white/80 hover:text-zippy-gold hover:border-zippy-gold hover:-translate-y-0.5 transition-all duration-300"
             aria-label="Follow us on Instagram"
           >
             <Instagram className="w-5 h-5" />
           </a>
-          <button className="btn-gold">
+
+          {/* CTA Button */}
+          <a
+            href="#contact"
+            className="btn-gold flex items-center justify-center"
+          >
             Get Free Quote
-          </button>
+          </a>
+
         </div>
 
         {/* Mobile Toggle */}
@@ -76,6 +103,7 @@ export default function Navbar() {
         >
           {mobileMenuOpen ? <X /> : <Menu />}
         </button>
+
       </div>
 
       {/* Mobile Menu */}
@@ -87,6 +115,8 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             className="absolute top-full left-0 right-0 bg-[#0B0B0B] border-b border-white/5 py-8 px-6 flex flex-col gap-6 lg:hidden shadow-2xl"
           >
+
+            {/* Mobile Links */}
             {links.map((link) => (
               <Link
                 key={link.name}
@@ -97,8 +127,12 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+
+            {/* Mobile Actions */}
             <div className="flex flex-col gap-4 mt-4">
-              <a 
+
+              {/* Instagram */}
+              <a
                 href="https://www.instagram.com/zippy.solar/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -108,14 +142,21 @@ export default function Navbar() {
                 <Instagram className="w-5 h-5 text-zippy-gold" />
                 Follow on Instagram
               </a>
-              <button className="bg-zippy-gold text-zippy-dark text-sm font-bold py-4 rounded-xl">
+
+              {/* Mobile CTA */}
+              <a
+                href="#contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="bg-zippy-gold text-zippy-dark text-sm font-bold py-4 rounded-xl text-center hover:opacity-90 transition-all"
+              >
                 Get Free Quote
-              </button>
+              </a>
+
             </div>
+
           </motion.div>
         )}
       </AnimatePresence>
     </header>
-
   );
 }
