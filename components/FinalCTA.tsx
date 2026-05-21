@@ -30,12 +30,12 @@ export default function FinalCTA() {
     setIsSubmitting(true);
 
     const message = `
-🌞 New Solar Inquiry
+    New Solar Inquiry
 
-👤 Name: ${formData.name}
-📞 Phone: ${formData.phone}
-⚡ Monthly Units: ${formData.consumption}
-📍 City: ${formData.city}
+    Name: ${formData.name}
+    Phone: ${formData.phone}
+    Monthly Units: ${formData.consumption}
+    City: ${formData.city}
     `;
 
     const whatsappNumber = '919343430401';
