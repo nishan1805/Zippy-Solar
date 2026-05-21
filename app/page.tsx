@@ -5,7 +5,7 @@ import TrustStatsStrip from '@/components/TrustStatsStrip';
 import Services from '@/components/Services';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import HowItWorks from '@/components/HowItWorks';
-import ProjectShowcase from '@/components/ProjectShowcase';
+// import ProjectShowcase from '@/components/ProjectShowcase';
 import SavingsCalculator from '@/components/SavingsCalculator';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
@@ -23,7 +23,7 @@ export default function Home() {
         <Services />
         <WhyChooseUs />
         <HowItWorks />
-        <ProjectShowcase />
+        {/* <ProjectShowcase /> */}
         <SavingsCalculator />
         <Testimonials />
         <FAQ />
