@@ -91,9 +91,7 @@ export default function FinalCTA() {
             </h2>
 
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-xl mb-12">
-              Get a free premium rooftop feasibility site inspection and
-              bespoke ROI calculation. Absolutely zero obligation.
-              Discover the exact subsidy amount and ideal solar setup for your property.
+              Get a free site inspection and consultation. Discover the exact subsidy amount and calculate your ROI with absolutely no obligation.
             </p>
 
             {/* CONTACT DETAILS */}
