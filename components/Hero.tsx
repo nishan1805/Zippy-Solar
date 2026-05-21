@@ -58,13 +58,21 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="flex flex-col sm:flex-row gap-4 mt-4"
-        >
-          <button className="bg-zippy-gold text-zippy-dark font-bold px-10 py-4 rounded-lg transition-all hover:opacity-90 shadow-lg shadow-zippy-gold/20">
-            Get Free Consultation
-          </button>
-          <button className="bg-transparent border border-white/30 text-white font-bold px-10 py-4 rounded-lg transition-all hover:bg-white/5 backdrop-blur-sm">
+          >
+          {/* Services Button */}
+          <a
+            href="#services"
+            className="bg-zippy-gold text-zippy-dark font-bold px-10 py-4 rounded-lg transition-all hover:opacity-90 shadow-lg shadow-zippy-gold/20 text-center"
+            >
+            Our Services
+          </a>
+          {/* Calculator Button */}
+          <a
+            href="#savings"
+            className="bg-transparent border border-white/30 text-white font-bold px-10 py-4 rounded-lg transition-all hover:bg-white/5 backdrop-blur-sm text-center"
+            >
             Calculate Savings
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>
