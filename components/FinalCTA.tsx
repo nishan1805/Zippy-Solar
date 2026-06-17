@@ -132,7 +132,7 @@ export default function FinalCTA() {
                     href="mailto:help@zippysolar.com"
                     className="text-white font-semibold text-lg hover:text-zippy-gold transition-colors"
                   >
-                    help@zippysolar.com
+                    hello@zippysolar.com
                   </a>
                 </div>
               </div>
@@ -149,8 +149,8 @@ export default function FinalCTA() {
                   </span>
 
                   <p className="text-white font-semibold leading-relaxed max-w-md">
-                    No. 415, 4th Floor, Golden Trade Centre,
-                    Sector 2, Raipur, CG 492001
+                    Office No. 415, 4th Floor, Golden Trade Centre,
+                    New Rajinder Nagar, Raipur, CG 492001
                   </p>
                 </div>
               </div>
