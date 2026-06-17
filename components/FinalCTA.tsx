@@ -150,7 +150,7 @@ export default function FinalCTA() {
 
                   <p className="text-white font-semibold leading-relaxed max-w-md">
                     Office No. 415, 4th Floor, Golden Trade Centre,
-                    New Rajinder Nagar, Raipur, CG 492001
+                    New Rajendra Nagar, Raipur, CG 492001
                   </p>
                 </div>
               </div>
