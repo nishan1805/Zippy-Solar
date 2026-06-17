@@ -45,7 +45,7 @@ export default function Navbar() {
           className="flex items-center"
           >
           <Image
-            src="/logo.png"
+            src="/zippylogo.png"
             alt="Zippy Solar"
             width={240}
             height={60}
