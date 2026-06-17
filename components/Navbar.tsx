@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Instagram } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -38,25 +39,19 @@ export default function Navbar() {
     >
       <div className="w-full px-6 md:px-12 flex items-center justify-between">
 
-        {/* Logo */}
+       {/* Logo */}
         <Link
           href="#home"
-          className="flex items-center gap-2 group"
-        >
-          <div className="w-8 h-8 rounded bg-zippy-gold flex items-center justify-center">
-            <div
-              className="w-4 h-4 bg-zippy-dark"
-              style={{
-                clipPath:
-                  'polygon(40% 0%, 40% 45%, 100% 45%, 60% 100%, 60% 55%, 0% 55%)'
-              }}
+          className="flex items-center"
+          >
+          <Image
+            src="/logo.png"
+            alt="Zippy Solar"
+            width={240}
+            height={60}
+            priority
+            className="h-12 md:h-14 w-auto"
             />
-          </div>
-
-          <span className="text-xl font-bold tracking-tight text-white">
-            ZIPPY
-            <span className="text-zippy-gold">SOLAR</span>
-          </span>
         </Link>
 
         {/* Desktop Navigation */}
