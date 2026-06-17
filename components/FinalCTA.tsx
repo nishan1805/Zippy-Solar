@@ -132,7 +132,7 @@ export default function FinalCTA() {
                     href="mailto:help@zippysolar.com"
                     className="text-white font-semibold text-lg hover:text-zippy-gold transition-colors"
                   >
-                    hello@zippysolar.com
+                    hello@zippysolar.in
                   </a>
                 </div>
               </div>
