@@ -7,19 +7,19 @@ export default function Testimonials() {
   const testimonials = [
     {
       name: "Rajesh Sharma",
-      city: "Gurugram",
+      city: "Raipur",
       project: "Residential (8kW)",
       quote: "Zippy Solar handled everything from MNRE subsidy paperwork to the final net meter installation. My electricity bill has legitimately dropped to almost zero. Highly professional team."
     },
     {
       name: "Amit Desai",
-      city: "Ahmedabad",
+      city: "Bilaspur",
       project: "Commercial (50kW)",
       quote: "We installed a 50kW system on our factory roof. The build quality and the mounting structures are top-notch. The ROI on this is incredible for our operational costs."
     },
     {
       name: "Priya Reddy",
-      city: "Hyderabad",
+      city: "Jagdalpur",
       project: "Residential (5kW)",
       quote: "Clean installation, no loose wires around the house. They explained the whole app generation metrics to us patiently. The system has been running flawlessly for a year now."
     }
