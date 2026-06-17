@@ -5,7 +5,6 @@ import Image from 'next/image';
 import {
   Instagram,
   Facebook,
-  Linkedin
 } from 'lucide-react';
 
 export default function Footer() {
@@ -20,20 +19,15 @@ export default function Footer() {
           {/* Logo */}
           <Link
             href="#home"
-            className="flex flex-col items-center gap-5 group"
-          >
+            className="group"
+            >
             <Image
-              src="/logo.png"
+              src="/zippylogo.png"
               alt="Zippy Solar"
-              width={90}
+              width={320}
               height={90}
-              className="object-contain"
-            />
-
-            <div className="text-4xl md:text-5xl font-bold tracking-tight text-white">
-              Zippy
-              <span className="text-zippy-gold">Solar</span>
-            </div>
+              className="h-16 md:h-20 w-auto object-contain"
+              />
           </Link>
 
           {/* Description */}
@@ -64,16 +58,6 @@ export default function Footer() {
               className="w-14 h-14 rounded-full border border-white/10 bg-white/5 backdrop-blur-md flex items-center justify-center text-gray-300 hover:text-zippy-gold hover:border-zippy-gold hover:bg-zippy-gold/10 transition-all duration-300"
             >
               <Facebook className="w-5 h-5" />
-            </a>
-
-            {/* LinkedIn */}
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-14 h-14 rounded-full border border-white/10 bg-white/5 backdrop-blur-md flex items-center justify-center text-gray-300 hover:text-zippy-gold hover:border-zippy-gold hover:bg-zippy-gold/10 transition-all duration-300"
-            >
-              <Linkedin className="w-5 h-5" />
             </a>
 
           </div>
